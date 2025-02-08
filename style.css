@@ -139,10 +139,14 @@ nav li a:hover {
   margin: 100px 0;
 }
 .section-header h1 {
-  font-size: 64px;
+  font-size: 48px;
   color: var(--text-default);
 }
-.section-header .line {
+.section-header-light h1{
+  font-size: 48px;
+  color: var(--text-light);
+}
+.section-header .line{
   background-color: var(--accent);
   flex: 1;
   height: 5px;
@@ -152,6 +156,7 @@ nav li a:hover {
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
   max-width: 1920px;
+  padding: 0px 32px;
 }
 .hero .content::before {
   content: "";
@@ -324,15 +329,17 @@ nav li a:hover {
   padding: 50px 0px;
   background-color: var(--whitish);
 }
-.promos .content {
+.promos .content{
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .promo-cards-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 35px;
+  width: 100%;
 }
 .promo-card {
   background: var(--background);
@@ -350,4 +357,52 @@ nav li a:hover {
   flex-direction: column;
   padding: 25px;
   gap: 10px;
+}
+.card-header{
+  color: var(--text-default);
+  font-size: 24px;
+  font-weight: bold;
+}
+.card-sub-header{
+  color: var(--accent);
+  font-size: 16px;
+}
+.card-header-light{
+  color: var(--text-light);
+  font-size: 24px;
+}
+.merch {
+  padding: 50px 0px;
+  background-color: var(--text-default);
+}
+.merch .content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.merch-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 35px;
+}
+.merch-card {
+  border-radius: 10px;
+  background: var(--darkish);
+  box-shadow: 0 0 3px var(--accent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  transition: all .42s;
+  overflow: hidden;
+}
+.merch-card img{
+  width: 100%;
+}
+.merch-card:hover{
+  box-shadow: 0 0 15px var(--accent);
 }
